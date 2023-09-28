@@ -7,59 +7,93 @@
     <title>Personal Task Tracker</title>
     <style>
         * {
-            box-sizing: border-boxs;
-
+            box-sizing: border-box;
+            margin: 0;
         }
-
-        body {
+        body{
             background-image: url(images\ \(3\).jpeg);
-            background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-
         }
-
         .container {
             display: flex;
-            width: 960px;
-            align-items: center;
+            align-content: space-around;
             justify-content: center;
+            padding: 50px;
         }
 
         .box {
-            width: 500px;
-            margin: 30px;
-            padding: 20px;
-            background-color: #eee;
+            width: 600px;
+            background-color: #262e4c;
+            border-radius: 10px;
+            padding: 10px;
         }
-        li:hover{
-            cursor: pointer;
-            background-color: orange;
-        }
+
         h1 {
-            color: blacks;
-            font-size: 40px;
+            color: white;
+            padding: 10px;
+            background-color: #de3f53;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .samuel input {
+            border: none;
+            background-color: whitesmoke;
+            font-size: 20px;
+            padding: 10px;
+            width: 70%;
+            border-radius: 10px;
+        }
+
+        .box ul li {
+            padding: 10px;
+            background-color: #262e4c;
+            border: 3px solid;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            color: #e0e0e0;
         }
 
         li {
             margin: 5px 0;
-        }
-        #add-task{
-            background-color: green;
-            padding: px;
-        }
-        button{
-            background-color: red;
+            border: 100px;
+            font-size: larger;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            color: #fff;
+            display: flex;
+            align-content: space-between;
         }
 
+        #add-task {
+            background-color: green;
+            padding: 15px;
+            width: 20%;
+            height: 40%;
+            border-radius: 10px;
+            border: none;
+            color: antiquewhite;
+        }
+
+        ul li:hover {
+            color: rgb(255, 82, 82);
+        }
 
         .completed {
             text-decoration: line-through;
+        }
+
+        label {
+            font-size: x-large;
+            color: #fff;
         }
     </style>
 </head>
@@ -70,7 +104,7 @@
             <div class="col-md-12 box">
                 <h1>Task Tracker</h1>
 
-                <div>
+                <div class="samuel">
                     <input type="text" id="task-input" placeholder="Add a new task">
                     <button id="add-task">Add Task</button>
                 </div>
