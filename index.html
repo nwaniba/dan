@@ -46,6 +46,10 @@
             border-radius: 10px;
         }
 
+        li input[type="checkbox"] {
+            margin-left: auto;
+        }
+
         .box ul li {
             padding: 10px;
             background-color: #262e4c;
@@ -64,13 +68,13 @@
         li {
             margin: 5px 0;
             border: 100px;
-            font-size: larger;
             padding: 10px;
-            width: 100%;
             border: none;
             color: #fff;
             display: flex;
-            align-content: space-between;
+            min-width: 5px;
+            font-size: larger;
+            font-weight: bolder;
         }
 
         #add-task {
@@ -81,6 +85,10 @@
             border-radius: 10px;
             border: none;
             color: antiquewhite;
+            margin-left: 9%;
+        }
+        li button:hover{
+            color: red;
         }
 
         ul li:hover {
@@ -88,7 +96,7 @@
         }
 
         .completed {
-            text-decoration: line-through;
+            text-decoration: line-through red;
         }
 
         label {
